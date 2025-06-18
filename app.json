@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "MoleApp",
-    "slug": "MoleApp",
+    "slug": "pegacoelho",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,17 +13,32 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.marcdupr.pegacoelho",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.marcdupr.pegacoelho"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-audio"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c49cfcad-7e2f-4f79-ab98-e543c11e97e5"
+      }
+    },
+    "owner": "marcdupr"
   }
 }
